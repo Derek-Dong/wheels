@@ -4,6 +4,7 @@
     <div style="border: 1px solid green; height: 100px;">
       <slot></slot>
     </div>
+  </div>
 </template>
 
 <script>
