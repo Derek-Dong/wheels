@@ -6,7 +6,10 @@
   <title>Wheels</title>
   <style>
     * {margin: 0; padding: 0; box-sizing: border-box;}
-    :root {
+    img {
+      max-width: 100%;
+    }
+    html {
       --button-height: 32px;
       --font-size: 14px;
       --button-bg: white;
@@ -28,9 +31,51 @@
       margin: 20px;
     }
   </style>
+  <style>
+    .demoBox {
+      min-height: 50px;
+      background: grey;
+      border: 1px solid red;
+    }
+    .logo-wrapper {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
 </head>
 <body>
   <div id="app">
+    <w-row class="topbar">
+      <w-col class="demoBox" span="9">
+        <w-row align="left">
+          <w-col>1</w-col>
+          <w-col>2</w-col>
+          <w-col>3</w-col>
+          <w-col>4</w-col>
+        </w-row>
+      </w-col>
+      <w-col class="demoBox" span="15">
+        <w-row align="left">
+          <w-col>1</w-col>
+          <w-col>2</w-col>
+          <w-col>3</w-col>
+          <w-col>4</w-col>
+          <w-col>5</w-col>
+          <w-col>6</w-col>
+          <w-col>7</w-col>
+        </w-row>
+      </w-col>
+    </w-row>
+    <w-row class="logo-and-search-and-qrcode">
+      <w-col class="demoBox" span="4">
+        <div class="logo-wrapper">
+          <img src="" alt="">
+        </div>
+      </w-col>
+      <w-col class="demoBox" span="14"></w-col>
+      <w-col class="demoBox" span="6"></w-col>
+    </w-row>
     <div style="border: 1px solid black;">
       <w-row gutter="20">
         <w-col>1</w-col>
@@ -72,17 +117,9 @@
     </div>
     <hr>
     <div class="box">
-      <w-input value="张三" disabled></w-input>
-      <w-input value="李四" readonly></w-input>
-      <w-input value="王五"></w-input>
-    </div>
-    <div class="box">
       <w-input v-model="message"></w-input>
       <p>{{message}}</p>
       <button @click="message+=1">+1</button>
-    </div>
-    <div class="box">
-      <w-input value="王" error="姓名不能少于两个字"></w-input>
     </div>
     <div class="box">
       <w-button :loading="loading1" @click="loading1 = !loading1">按钮</w-button>
