@@ -6,9 +6,6 @@
   <title>Wheels</title>
   <style>
     * {margin: 0; padding: 0; box-sizing: border-box;}
-    img {
-      max-width: 100%;
-    }
     html {
       --button-height: 32px;
       --font-size: 14px;
@@ -31,70 +28,28 @@
       margin: 20px;
     }
   </style>
-  <style>
-    .demoBox {
-      min-height: 50px;
-      background: grey;
-      border: 1px solid red;
-    }
-    .logo-wrapper {
-      padding: 10px;
-      display: flex;
-      justify-content: center;
-    }
-  </style>
 </head>
 <body>
   <div id="app">
-    <w-row class="topbar">
-      <w-col class="demoBox" span="9">
-        <w-row align="left">
-          <w-col>1</w-col>
-          <w-col>2</w-col>
-          <w-col>3</w-col>
-          <w-col>4</w-col>
-        </w-row>
-      </w-col>
-      <w-col class="demoBox" span="15">
-        <w-row align="left">
-          <w-col>1</w-col>
-          <w-col>2</w-col>
-          <w-col>3</w-col>
-          <w-col>4</w-col>
-          <w-col>5</w-col>
-          <w-col>6</w-col>
-          <w-col>7</w-col>
-        </w-row>
-      </w-col>
-    </w-row>
-    <w-row class="logo-and-search-and-qrcode">
-      <w-col class="demoBox" span="4">
-        <div class="logo-wrapper">
-          <img src="" alt="">
-        </div>
-      </w-col>
-      <w-col class="demoBox" span="14"></w-col>
-      <w-col class="demoBox" span="6"></w-col>
-    </w-row>
     <div style="border: 1px solid black;">
       <w-row gutter="20">
-        <w-col>1</w-col>
-        <w-col>2</w-col>
-      </w-row>
-      <w-row gutter="20">
-        <w-col>1</w-col>
-        <w-col>2</w-col>
-        <w-col>3</w-col>
-      </w-row>
-      <w-row gutter="20">
-        <w-col>1</w-col>
-        <w-col>2</w-col>
-        <w-col>3</w-col>
-        <w-col>4</w-col>
-      </w-row>
-      <w-row gutter="20">
-        <w-col span="2">1</w-col>
-        <w-col span="20" offset="2">11</w-col>
+        <w-col span="2"
+          :phone="{span:24}"
+          :ipad="{span:8}"
+          :narrow-pc="{span:4}"
+          :pc="{span:2}"
+          :wide-pc="{span:1}"
+        >
+          1
+        </w-col>
+        <w-col span="22"
+          :phone="{span:24}"
+          :ipad="{span:16}"
+          :narrow-pc="{span:20}"
+          :pc="{span:22}"
+          :wide-pc="{span:23}"
+        >11
+        </w-col>
       </w-row>
       <w-row gutter="20">
         <w-col span="4">1</w-col>
