@@ -28,62 +28,36 @@
       margin: 20px;
     }
   </style>
+  <style>
+    .demo {
+      background-color: #ddd;
+      border: 1px solid #666;
+      height: 100px;
+    }
+  </style>
 </head>
 <body>
   <div id="app">
-    <div style="border: 1px solid black;">
-      <w-row gutter="20">
-        <w-col span="24"
-          :ipad="{span:8}"
-          :narrow-pc="{span:4}"
-          :pc="{span:2}"
-          :wide-pc="{span:1}"
-        >
-          1
-        </w-col>
-        <w-col span="24"
-          :ipad="{span:16}"
-          :narrow-pc="{span:20}"
-          :pc="{span:22}"
-          :wide-pc="{span:23}"
-        >11
-        </w-col>
-      </w-row>
-      <w-row gutter="20">
-        <w-col span="4">1</w-col>
-        <w-col span="20">11</w-col>
-      </w-row>
-      <w-row gutter="20">
-        <w-col span="4">1</w-col>
-        <w-col span="18" offset="2">11</w-col>
-      </w-row>
-      <w-row gutter="20">
-        <w-col span="4">1</w-col>
-        <w-col span="8" offset="2">11</w-col>
-        <w-col span="8" offset="2">11</w-col>
-      </w-row>
-      <w-row gutter="20">
-        <w-col span="4">1</w-col>
-        <w-col span="4" offset="6">11</w-col>
-        <w-col span="8" offset="2">11</w-col>
-      </w-row>
-    </div>
-    <hr>
-    <div class="box">
-      <w-input v-model="message"></w-input>
-      <p>{{message}}</p>
-      <button @click="message+=1">+1</button>
-    </div>
-    <div class="box">
-      <w-button :loading="loading1" @click="loading1 = !loading1">按钮</w-button>
-      <w-button icon="settings" :loading="loading2" @click="loading2 = !loading2">按钮</w-button>
-      <w-button icon="settings" icon-position="right" :loading="loading3" @click="loading3 = !loading3">按钮</w-button>
-      <w-button-group>
-        <w-button icon="left">上一页</w-button>
-        <w-button>更多</w-button>
-        <w-button icon="right" icon-position="right">下一页</w-button>
-      </w-button-group>
-    </div>
+    <w-row>
+      <w-col span="24" :narrow-pc="{span:8}">
+        <div class="demo"></div>
+      </w-col>
+      <w-col span="24" :narrow-pc="{span:8}">
+        <div class="demo"></div>
+      </w-col>
+      <w-col span="24" :narrow-pc="{span:8}">
+        <div class="demo"></div>
+      </w-col>
+      <w-col span="24" :narrow-pc="{span:8}">
+        <div class="demo"></div>
+      </w-col>
+      <w-col span="24" :narrow-pc="{span:8}">
+        <div class="demo"></div>
+      </w-col>
+      <w-col span="24" :narrow-pc="{span:8}">
+        <div class="demo"></div>
+      </w-col>
+    </w-row>
   </div>
   <script src="./src/app.js"></script>
 </body>
