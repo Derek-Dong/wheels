@@ -24,24 +24,22 @@
     }
   </style>
   <style>
-    .box {
-      margin: 20px;
-    }
-  </style>
-  <style>
     .demo {
-      background-color: #ddd;
-      border: 1px solid #666;
-      height: 100px;
+      border:1px solid #666;
+      min-height: 100px;
     }
   </style>
 </head>
 <body>
   <div id="app">
-    <w-row gutter="20">
-      <w-col span="12"></w-col>
-      <w-col span="12"></w-col>
-    </w-row>
+    <w-layout style="height: 100vh;">
+      <w-sider class="demo">sider</w-sider>
+      <w-layout>
+        <w-header class="demo">header</w-header>
+        <w-content class="demo">content</w-content>
+        <w-footer class="demo">footer</w-footer>
+      </w-layout>
+    </w-layout>
   </div>
   <script src="./src/app.js"></script>
 </body>
