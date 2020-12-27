@@ -25,15 +25,18 @@
   <div id="app" style="padding-left: 100px;">
     <div style="overflow: hidden; padding-top: 150px; padding-bottom: 40px;">
       <w-popover position="bottom">
-        <template slot="content">
-          <div>askdjsakdjsakjdslkjdlskjdlsjkdlskjdlsjkdlskjdlsajkdlajkdlkajdlksajdladjk</div>
-          <div>askdjsakdjsakjdslkjdlskjdlsjkdlskjdlsjkdlskjdlsajkdlajkdlkajdlksajdladjk</div>
+        <template slot="content" slot-scope="{close}">
+          <div>文字</div>
+          <div>popover <a href="http://qq.com">看新网</a> 内容</div>
+          <w-button @click="close">关闭</w-button>
         </template>
         <w-button>点我</w-button>
       </w-popover>
       <w-popover position="top">
         <template slot="content">
-          <div>popover内容</div>
+          <div>popover内容
+            <w-button>关闭</w-button>
+          </div>
         </template>
         <w-button>点我</w-button>
       </w-popover>
@@ -45,7 +48,7 @@
       </w-popover>
       <w-popover position="right">
         <template slot="content">
-          <div>popover内容</div>
+          <div>popover <a href="http://qq.com">看新网</a> 内容</div>
         </template>
         <w-button>点我</w-button>
       </w-popover>
