@@ -21,15 +21,13 @@
   }
 </script>
 <style scoped lang="scss">
-  $blue: blue;
-  $tab-height: 40px;
-  $border-color: #ddd;
+  @import "helper";
   .tabs-head {
     display: flex;
     height: $tab-height;
     justify-content: flex-start;
     position: relative;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $tabs-border-color;
     > .line {
       position: absolute;
       bottom: 0;

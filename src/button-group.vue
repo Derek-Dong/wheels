@@ -20,6 +20,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "helper";
 .w-button-group {
   display: inline-flex;
   vertical-align: middle;
@@ -29,12 +30,10 @@ export default {
       margin-left: -1px;
     }
     &:first-child {
-      border-top-left-radius: var(--border-radius);
-      border-bottom-left-radius: var(--border-radius);
+      border-radius: $border-radius 0 0 $border-radius;
     }
     &:last-child {
-      border-top-right-radius: var(--border-radius);
-      border-bottom-right-radius: var(--border-radius);
+      border-radius: 0 $border-radius $border-radius 0;
     }
     &:hover {
       position: relative;

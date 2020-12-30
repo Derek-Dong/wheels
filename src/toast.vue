@@ -85,9 +85,7 @@
   }
 </script>
 <style scoped lang="scss">
-  $font-size: 14px;
-  $toast-min-height: 40px;
-  $toast-bg: rgba(0, 0, 0, 0.75);
+  @import "helper";
   @keyframes slide-up {
     0% {opacity: 0; transform: translateY(100%);}
     100% {opacity: 1;transform: translateY(0%);}
