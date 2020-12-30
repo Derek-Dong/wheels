@@ -1,11 +1,9 @@
 <template>
-  <div>
+  <div class="wrapper">
     <w-button>默认按钮</w-button>
     <w-button icon="settings">默认按钮</w-button>
-    <w-button :loading="true">默认按钮</w-button>
+    <w-button :loading="loading" @click="loading=!loading">默认按钮</w-button>
     <w-button disabled>默认按钮</w-button>
-
-    <pre><code>{{content}}</code></pre>
   </div>
 </template>
 <script>
@@ -14,15 +12,15 @@
     components: {
       'w-button': Button
     },
-    data () {
+    data() {
       return {
-        content: `
-          <w-button>默认按钮</w-button>
-          <w-button icon="settings">默认按钮</w-button>
-          <w-button :loading="true">默认按钮</w-button>
-          <w-button disabled>默认按钮</w-button>
-      `.replace(/\t+| +/g, '').trim()
+        loading: true
       }
     }
   }
 </script>
+<style>
+div.wrapper {
+  margin-top: 10px;
+}
+</style>
