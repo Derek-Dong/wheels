@@ -12,7 +12,7 @@ module.exports = {
       {
         title: '入门',
         children: [
-          '/install/',
+          '/introduce/',
           '/get-started/',
         ]
       },
