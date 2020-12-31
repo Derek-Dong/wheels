@@ -16,13 +16,13 @@ title: Input 输入框
 #### 示例代码：
 
 ```vue
-<i-input placeholder="请输入内容"></i-input>
-<i-input value="默认内容"></i-input>
-<i-input disabled value="默认内容"></i-input>
-<i-input error="用户名不低于两个字"></i-input>
+<w-input placeholder="请输入内容"></w-input>
+<w-input value="默认内容"></w-input>
+<w-input disabled value="默认内容"></w-input>
+<w-input error="用户名不低于两个字"></w-input>
 
 <!--可支持数据绑定-->
-<i-input v-model="value"></i-input>
+<w-input v-model="value"></w-input>
 <p>value: {{value}}</p>
 ```
 
