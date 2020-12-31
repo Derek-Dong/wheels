@@ -61,6 +61,7 @@
       display: flex; 
       align-items: center; 
       padding: 0 8px;
+      cursor: pointer;
       background: lighten($grey, 8%);
     }
     &:first-child {
