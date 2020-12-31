@@ -4,9 +4,9 @@ module.exports = {
   description: '一个好用的UI框架',
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
-      { text: 'External', link: 'https://google.com' },
+      { text: '主页', link: '/' },
+      { text: '文档', link: '/guide/' },
+      { text: 'Github', link: 'https://github.com/Derek-Dong/wheels' },
     ],
     sidebar: [
       {
@@ -29,7 +29,6 @@ module.exports = {
           '/components/popover',
         ]
       },
-
     ]
   }
 } 
