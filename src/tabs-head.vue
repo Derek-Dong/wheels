@@ -11,11 +11,15 @@
   export default {
     name: 'WheelsTabsHead',
     inject: ['eventBus'],
-    mounted () {
-      this.eventBus.$on('update:selected', (item, vm) => {
-        let {width, height, top, left} = vm.$el.getBoundingClientRect()
+    mounted() {
+      this.eventBus.$on('update:selected',(item,vm)=>{
+        let {width,height,top,left} = vm.$el.getBoundingClientRect()
+        // console.dir(vm.$el)
+        // console.dir(vm.$el.offsetLeft)
+        // console.log(width,height,top,left)
         this.$refs.line.style.width = `${width}px`
-        this.$refs.line.style.left = `${left}px`
+        // this.$refs.line.style.left = `${left}px`
+        this.$refs.line.style.left = `${vm.$el.offsetLeft}px`
       })
     }
   }

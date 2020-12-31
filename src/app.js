@@ -50,7 +50,8 @@ const h = createElement
 new Vue({
   el: '#app',
   data: {
-    selectedTab: ['2','1']
+    selectedTab:['1'],
+    selected:'1'
   },
   created(){
   },
